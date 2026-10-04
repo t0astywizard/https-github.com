@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For MY Girlfriend ❤️</title>
+
+    <!-- Calligraphy font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #000;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #fff;
+        }
+
+        .message {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+
+            animation: fadeIn 3s ease forwards;
+        }
+
+        h1 {
+            font-family: "Allura", cursive;
+            font-size: clamp(55px, 8vw, 110px);
+            font-weight: 400;
+
+            color: #8b0000;
+
+            text-shadow:
+                0 0 10px #4d0000,
+                0 0 25px #660000,
+                0 0 50px #330000;
+
+            line-height: 1.1;
+        }
+
+        .heart {
+            position: absolute;
+            color: #5c0000;
+            font-size: 30px;
+
+            text-shadow:
+                0 0 10px #550000,
+                0 0 25px #8b0000;
+
+            animation: float 8s infinite ease-in-out;
+        }
+
+        .heart:nth-child(1) {
+            left: 8%;
+            top: 15%;
+            font-size: 35px;
+            animation-delay: 0s;
+        }
+
+        .heart:nth-child(2) {
+            left: 20%;
+            top: 70%;
+            font-size: 22px;
+            animation-delay: 2s;
+        }
+
+        .heart:nth-child(3) {
+            right: 12%;
+            top: 20%;
+            font-size: 40px;
+            animation-delay: 1s;
+        }
+
+        .heart:nth-child(4) {
+            right: 22%;
+            bottom: 15%;
+            font-size: 25px;
+            animation-delay: 3s;
+        }
+
+        .heart:nth-child(5) {
+            left: 45%;
+            top: 8%;
+            font-size: 18px;
+            animation-delay: 4s;
+        }
+
+        .heart:nth-child(6) {
+            left: 5%;
+            bottom: 10%;
+            font-size: 28px;
+            animation-delay: 1.5s;
+        }
+
+        .heart:nth-child(7) {
+            right: 5%;
+            bottom: 35%;
+            font-size: 20px;
+            animation-delay: 2.5s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(-5deg);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: translateY(-30px) rotate(5deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+    <div class="heart">♥</div>
+
+    <!-- Main message -->
+    <div class="message">
+        <h1>
+            For the one that<br>
+            brought my shine and smile back
+        </h1>
+    </div>
+
+</body>
+</html>
